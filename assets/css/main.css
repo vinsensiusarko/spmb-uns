@@ -63,7 +63,7 @@ header nav .ownmenu ul.dropdown .indicator{display:block;left:0px;margin-left:0p
 .ownmenu ul.dropdown li a{width:100%;padding:12px 24px 12px;display:inline-block;float:left;clear:both;text-decoration:none;color:#999;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;}
 .ownmenu ul.dropdown li:hover > a{color:#e4a913 !important;}
 .ownmenu ul.dropdown li ul.dropdown.left{left:auto;right:100%;}
-.ownmenu .indicator{position:relative;left:4px;font-size:12px;top:1px;}
+.ownmenu .indicator{position:relative;left:4px;font-size:12px;top:1px;float: right;}
 .ownmenu ul li .indicator{font-size:12px;top:1px;left:10px;}
 .ownmenu ul.dropdown{top:54px;}
 .ownmenu > li > .megamenu{top:54px;}
