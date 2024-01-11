@@ -1,89 +1,722 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to Firebase Hosting</title>
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta name="author" content="" />
+<!-- Document Title -->
+<title>SPMB | UNS Solo</title>
 
-    <!-- update the version number as needed -->
-    <script defer src="/__/firebase/10.7.1/firebase-app-compat.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/10.7.1/firebase-auth-compat.js"></script>
-    <script defer src="/__/firebase/10.7.1/firebase-database-compat.js"></script>
-    <script defer src="/__/firebase/10.7.1/firebase-firestore-compat.js"></script>
-    <script defer src="/__/firebase/10.7.1/firebase-functions-compat.js"></script>
-    <script defer src="/__/firebase/10.7.1/firebase-messaging-compat.js"></script>
-    <script defer src="/__/firebase/10.7.1/firebase-storage-compat.js"></script>
-    <script defer src="/__/firebase/10.7.1/firebase-analytics-compat.js"></script>
-    <script defer src="/__/firebase/10.7.1/firebase-remote-config-compat.js"></script>
-    <script defer src="/__/firebase/10.7.1/firebase-performance-compat.js"></script>
-    <!-- 
-      initialize the SDK after all desired features are loaded, set useEmulator to false
-      to avoid connecting the SDK to running emulators.
-    -->
-    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+<!-- Favicon -->
+<link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+<link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
 
-    <style media="screen">
-      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
-      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
-      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
-      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
-      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
-      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
-      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
-      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
-      @media (max-width: 600px) {
-        body, #message { margin-top: 0; background: white; box-shadow: none; }
-        body { border-top: 16px solid #ffa100; }
-      }
-    </style>
-  </head>
-  <body>
-    <div id="message">
-      <h2>Welcome</h2>
-      <h1>Firebase Hosting Setup Complete</h1>
-      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
-      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
+<!-- FontsOnline -->
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Alegreya+Sans:400,500,700,800,900,300,100' rel='stylesheet' type='text/css'>
+
+<!-- StyleSheets -->
+<link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+<link rel="stylesheet" href="assets/css/bootstrap/bootstrap.min.css">
+<link rel="stylesheet" href="assets/css/fontawesome.min.css">
+<link rel="stylesheet" href="assets/css/font-awesome.min.css">
+<link rel="stylesheet" href="assets/css/main.css">
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="assets/css/responsive.css">
+<link rel="stylesheet" href="assets/css/custom.css">
+
+<!-- SLIDER REVOLUTION 4.x CSS SETTINGS -->
+<link rel="stylesheet" type="text/css" href="assets/rs-plugin/css/settings.css" media="screen" />
+
+<!-- JavaScripts -->
+<script src="assets/js/vendors/modernizr.js"></script>
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+
+<!-- Back to top button -->
+<div class="btn-back_to_top">
+  <span class="fa fa-arrow-up"></span>
+</div>
+
+<!-- LOADER ===========================================-->
+<div id="loader">
+  <div class="loader">
+    <div class="position-center-center">
+      <div id="preloader6"> <span></span> <span></span> <span></span> <span></span> </div>
     </div>
-    <p id="load">Firebase SDK Loading&hellip;</p>
+  </div>
+</div>
 
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        const loadEl = document.querySelector('#load');
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-        // // The Firebase SDK is initialized and available here!
-        //
-        // firebase.auth().onAuthStateChanged(user => { });
-        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-        // firebase.firestore().doc('/foo/bar').get().then(() => { });
-        // firebase.functions().httpsCallable('yourFunction')().then(() => { });
-        // firebase.messaging().requestPermission().then(() => { });
-        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-        // firebase.analytics(); // call to activate
-        // firebase.analytics().logEvent('tutorial_completed');
-        // firebase.performance(); // call to activate
-        //
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+<!-- Page Wrapper -->
+<div id="wrap">
 
-        try {
-          let app = firebase.app();
-          let features = [
-            'auth', 
-            'database', 
-            'firestore',
-            'functions',
-            'messaging', 
-            'storage', 
-            'analytics', 
-            'remoteConfig',
-            'performance',
-          ].filter(feature => typeof app[feature] === 'function');
-          loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
-        } catch (e) {
-          console.error(e);
-          loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
-        }
-      });
-    </script>
-  </body>
+  <!-- Top bar -->
+  <div class="wrap">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="top-bar">
+          <ul id="ownmenu" class="ownmenu font-montserrat">
+          <li><a href="#">UNS Official</a></li>
+            <li><a href="#">Link Fakultas</a></li>
+            <li><a href="#">Kenapa Pilih UNS</a></li>
+            <li><a href="#">Info Pendaftaran</a>
+              <ul class="dropdown">
+                <li><a href="blank-page.html">Jadwal Seleksi</a></li>
+                <li><a href="#">Pendaftaran</a>
+                  <ul class="dropdown">
+                    <li><a href="blank-page.html">Sarjana</a></li>
+                    <li><a href="blank-page.html">Sekolah Vokasi</a></li>
+                    <li><a href="blank-page.html">Pascasarjana</a></li>
+                    <li><a href="blank-page.html">Profesi</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Tata Cara Pendaftaran</a>
+                  <ul class="dropdown">
+                    <li><a href="blank-page.html">FAQ</a></li>
+                    <li><a href="blank-page.html">Sarjana</a></li>
+                    <li><a href="blank-page.html">Sekolah Vokasi</a></li>
+                    <li><a href="blank-page.html">Pascasarjana</a></li>
+                    <li><a href="blank-page.html">Profesi</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Tata Cara Pembayaran</a>
+                  <ul class="dropdown">
+                    <li><a href="blank-page.html">FAQ</a></li>
+                    <li><a href="blank-page.html">Sarjana</a></li>
+                    <li><a href="blank-page.html">Sekolah Vokasi</a></li>
+                    <li><a href="blank-page.html">Pascasarjana</a></li>
+                    <li><a href="blank-page.html">Profesi</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li><a href="#">Biaya Pendidikan</a>
+              <ul class="dropdown">
+                <li><a href="blank-page.html">Sarjana</a></li>
+                <li><a href="blank-page.html">Sekolah Vokasi</a></li>
+                <li><a href="blank-page.html">Pascasarjana Profesi</a></li>
+                <li><a href="blank-page.html">Informasi Digital</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Pengumuman Hasil Seleksi</a></li>
+            <li><a href="#">FAQ</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="header coporate-header">
+    <div class="sticky">
+      
+      <div class="container">
+        <div class="logo"> <a href="index.html"><img src="assets/images/logo-uns.png" style="height: 50px; width: 100px;" alt=""></a> </div>
+        
+        <!-- Nav -->
+        <nav>
+          <ul id="ownmenu" class="ownmenu">
+            <li class="active"><a href="index.html">Beranda</a></li>
+            <!-- <li><a href="#">Vokasi</a>
+              <ul class="dropdown">
+                <li><a href="program-studi.html">Profil Program Studi</a></li>
+                <li><a href="informasi-jadwal.html">Informasi & Jadwal</a></li>
+              </ul>
+            </li> -->
+            <li><a href="#">Sarjana</a>
+              <ul class="dropdown">
+                <li><a href="blank-page.html">Ragam Seleksi</a></li>
+                <li><a href="program-studi.html">Program Studi & Daya Tampung</a></li>
+                <li><a href="blank-page.html">Angka Keketatan Persaingan</a></li>
+                <li><a href="informasi-jadwal.html">Informasi Digital</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Diploma</a>
+              <ul class="dropdown">
+                <li><a href="blank-page.html">Ragam Seleksi</a></li>
+                <li><a href="program-studi.html">Program Studi & Daya Tampung</a></li>
+                <li><a href="blank-page.html">Angka Keketatan Persaingan</a></li>
+                <li><a href="informasi-jadwal.html">Informasi Digital</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Pascasarjana</a>
+              <ul class="dropdown">
+                <li><a href="blank-page.html">Ragam Seleksi</a></li>
+                <li><a href="program-studi.html">Program Studi</a></li>
+                <li><a href="blank-page.html">Informasi Digital</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Profesi</a>
+              <ul class="dropdown">
+                <li><a href="blank-page.html">Ragam Seleksi</a></li>
+                <li><a href="program-studi.html">Program Studi</a></li>
+                <li><a href="blank-page.html">Informasi Digital</a></li>
+              </ul>
+            </li>
+            <li><a href="#">PPDS</a>
+              <ul class="dropdown">
+                <li><a href="blank-page.html">Ragam Seleksi</a></li>
+                <li><a href="program-studi.html">Program Studi</a></li>
+                <li><a href="blank-page.html">Informasi Digital</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Info</a>
+              <ul class="dropdown">
+                <li><a href="berita.html">Berita</a></li>
+                <li><a href="404.html">Download</a></li>
+                <li><a href="404.html">Rekap Jadwal</a></li>
+                <li><a href="404.html">Virtual Tour</a></li>
+              </ul>
+            </li>
+            
+            <!--======= SEARCH ICON =========-->
+            <li class="search-nav right"><a href="#."><i class="fa fa-search"></i></a>
+              <ul class="dropdown">
+                <li>
+                  <form>
+                    <input type="search" class="form-control" placeholder="Enter Your Keywords..." required>
+                    <button type="submit"> Search </button>
+                  </form>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <!-- End Header --> 
+  
+  <!--======= HOME MAIN SLIDER =========-->
+  <section class="home-slider">
+    <div class="tp-banner-container">
+      <div class="tp-banner-fix">
+        <ul id="hero-responsive">
+          <!-- Slider 2 -->
+          <li data-transition="fade" data-slotamount="7">
+            <video id="video-hero" playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+              <source src="assets/video/VID UNS.mp4" type="video/mp4">
+              <source src="assets/video/VID UNS.mp4" type="video/ogg" />
+            </video>
+            
+            <!-- Layer -->
+            <div class="tp-caption sft tp-resizeme font-extra-bold" 
+                  data-x="right" data-hoffset="0"
+                  data-y="center" data-voffset="0" 
+                  data-speed="700" 
+                  data-start="700" 
+                  data-easing="easeOutBack"
+                  data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;" 
+                  data-splitin="none" 
+                  data-splitout="none" 
+                  data-elementdelay="0.1" 
+                  data-endelementdelay="0.1" 
+                  data-endspeed="300" 
+                  data-captionhidden="on" 
+                  > <img src="assets/images/slides/hero1.png" alt="" > </div>
+            
+            <!-- Layer -->
+            <div class="tp-caption sfb tp-resizeme font-bold" 
+                  data-x="left" data-hoffset="40"
+                  data-y="center" data-voffset="-100"
+                  data-speed="500" 
+                  data-start="700" 
+                  data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;" 
+                  data-easing="Back.easeOut" 
+                  data-splitin="none" 
+                  data-splitout="none" 
+                  data-elementdelay="0.1" 
+                  data-endelementdelay="0.1"
+                  data-endspeed="300" 
+                  data-captionhidden="on"
+                  style="color: #00AFEF; font-size: 48px; font-weight: normal; letter-spacing:0px; line-height:55px;"> Universitas Sebelas Maret</div>
+            
+            <!-- Layer -->
+            <div class="tp-caption sfb tp-resizeme" 
+                  data-x="left" data-hoffset="40"
+                  data-y="center" data-voffset="30"
+                  data-speed="500" 
+                  data-start="1000" 
+                  data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;" 
+                  data-easing="Back.easeOut" 
+                  data-splitin="none" 
+                  data-splitout="none" 
+                  data-elementdelay="0.1" 
+                  data-endelementdelay="0.1" 
+                  data-endspeed="300" 
+                  data-captionhidden="on"
+                  style="color: #000000; font-size: 30px; font-weight: normal; line-height:36px;"> Seleksi Penerimaan Mahasiswa <br> Baru Universitas Sebelas Maret.</div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="hero-mobile">
+    <div class="container">
+      <li class="row">
+        <div class="col-md-6"> <img src="assets/images/hero-mobile.png" alt=""> </div>
+        <div class="col-md-6" style="vertical-align: middle;">
+          <h2>SPMB UNS</h2>
+          <p>Seleksi Penerimaan Mahasiswa Baru Universitas Sebelas Maret</p>
+        </div>
+      </li>
+    </div>
+  </section>
+  
+  <!-- Content -->
+  <div id="content"> 
+    <!-- CARD SLIDER -->
+    <section class="bg-card-button solution padding-top-100 padding-bottom-50">
+      <div class="container">
+        <!-- Tittle -->
+        <div class="heading-block black-text text-center margin-bottom-50">
+          <h5>Seleksi Penerimaan Mahasiswa baru yang sedang berlangsung</h5>
+        </div>
+        <!-- Card List -->
+        <div class="wrapper">
+          <i id="left" class="fa fa-angle-left"></i>
+          <ul class="carousel">
+            <a href="#">
+              <li class="card card-1">
+                <h2>PPDS - SP2PPDS - SP2PPDS - SP2PPDS - SP2PPDS - SP2PPDS - SP2</h2>
+                <span>Pengumuman Hasil Seleksi tahap 1 SPMBPengumuman Hasil Seleksi tahap 1 SPMBPengumuman Hasil Seleksi tahap 1 SPMB</span>
+              </li>
+            </a>
+            <a href="#">
+              <li class="card card-2">
+                <h2>SNBP</h2>
+                <span>Pengumuman hasil smnp diploma yang diterima di UNS tahun 2023</span>
+              </li>
+            </a>
+            <a href="#">
+              <li class="card card-3">
+                <h2>SNBP</h2>
+                <span>Pengumuman hasil seleksi masuk program studi profesi apoteker periode 1 tahun akademik 2022</span>
+              </li>
+            </a>
+            <a href="#">
+              <li class="card card-4">
+                <h2>PPDS - SP2</h2>
+                <span>Pengumuman Hasil Seleksi tahap 1 SPMB</span>
+              </li>
+            </a>
+            <a href="#">
+              <li class="card card-5">
+                <h2>SNBP</h2>
+                <span>Pengumuman hasil smnp diploma yang diterima di UNS tahun 2023</span>
+              </li>
+            </a>
+            <a href="#">
+              <li class="card card-6">
+                <h2>SNBP</h2>
+                <span>Pengumuman hasil seleksi masuk program studi profesi apoteker periode 1 tahun akademik 2022</span>
+              </li>
+            </a>
+          </ul>
+          <i id="right" class="fa fa-angle-right"></i>
+        </div>
+      </div>
+      <!-- MENU  -->
+      <div class="menu-pdf padding-bottom-30 padding-top-30">
+        <div class="container">
+          <div class="row">
+            <!-- Image Book -->
+            <div class="col-md-6"> <img class="img-book" src="assets/images/book-cover.png" alt=""> </div>
+            <div class="col-md-6"> 
+              <!-- Tittle -->
+              <div class="text-book white-text text-left margin-bottom-25">
+                <span>Pintu masuk ke Universitas Sebelas Maret Surakarta (UNS), di sini anda akan mendapatkan semua informasi mengenai tata cara masuk untuk kuliah di UNS. </span>
+              </div>
+              <button class="button-book" role="button" onclick="">
+                <span>Download PDF</span>
+                <i class="fa fa-long-arrow-right" style="font-size:20px; vertical-align: middle;"></i>
+              </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Menu Icon  -->
+    <section class="bg-menu-icon menu-icon padding-top-80">
+      <div class="container margin-bottom-100"> 
+        
+        <!-- Icon List -->
+        <ul class="row margin-bottom-100">
+          <li class="col-md-6">
+            <div class="row">
+              <div class="col-md-3 text-center">
+                <div class="icon"> <img src="assets/images/menu-icon/mobile/profil.png" alt="" > </div>
+              </div>
+              <div class="col-md-9">
+                <h5 class="menu-icon-title">Profil Program Studi</h5>
+                <p class="sub-title">Untuk melihat Profil Program Studi, Jenjang, 
+                  Akreditasi, Biaya Pendidikan dan Daya Tampung.</p>
+                <button class="button-icon-menu" role="button" onclick="">
+                  <span>Lihat Selengkapnya</span>
+                  <i class="fa fa-caret-right" style="font-size:18px; vertical-align: middle;"></i>
+                </button>
+              </div>
+            </div>
+          </li>
+          <li class="col-md-6">
+            <div class="row">
+              <div class="col-md-3 text-center">
+                <div class="icon"> <img src="assets/images/menu-icon/mobile/pengumuman.png" alt="" > </div>
+              </div>
+              <div class="col-md-9">
+                <h5 class="menu-icon-title">Pengumuman</h5>
+                <p class="sub-title">Untuk Melihat Pengumuman Hasil Seleksi.</p>
+                <button class="button-icon-menu" role="button" onclick="">
+                  <span>Lihat Selengkapnya</span>
+                  <i class="fa fa-caret-right" style="font-size:18px; vertical-align: middle;"></i>
+                </button>
+              </div>
+            </div>
+          </li>
+          <li class="col-md-6">
+            <div class="row">
+              <div class="col-md-3 text-center">
+                <div class="icon"> <img src="assets/images/menu-icon/mobile/informasi.png" alt="" > </div>
+              </div>
+              <div class="col-md-9">
+                <h5 class="menu-icon-title">Informasi & Jadwal</h5>
+                <p class="sub-title">Untuk Melihat Informasi Jalur Masuk berupa 
+                  Persyaratan dan Jadwal Kegiatan untuk masing-masing jalur.</p>
+                <button class="button-icon-menu" role="button" onclick="">
+                  <span>Lihat Selengkapnya</span>
+                  <i class="fa fa-caret-right" style="font-size:18px; vertical-align: middle;"></i>
+                </button>
+              </div>
+            </div>
+          </li>
+          <li class="col-md-6">
+            <div class="row">
+              <div class="col-md-3 text-center">
+                <div class="icon"> <img src="assets/images/menu-icon/mobile/berita.png" alt="" > </div>
+              </div>
+              <div class="col-md-9">
+                <h5 class="menu-icon-title">Berita</h5>
+                <p class="sub-title">Untuk Melihat Informasi terkini tentang proses 
+                  penerimaan mahasiswa baru di UNS.</p>
+                <button class="button-icon-menu" role="button" onclick="">
+                  <span>Lihat Selengkapnya</span>
+                  <i class="fa fa-caret-right" style="font-size:18px; vertical-align: middle;"></i>
+                </button>
+              </div>
+            </div>
+          </li>
+          <li class="col-md-6">
+            <div class="row">
+              <div class="col-md-3 text-center">
+                <div class="icon"> <img src="assets/images/menu-icon/mobile/pendaftaran.png" alt="" > </div>
+              </div>
+              <div class="col-md-9">
+                <h5 class="menu-icon-title">Pendaftaran</h5>
+                <p class="sub-title">Untuk Melakukan proses pendaftaran.</p>
+                <button class="button-icon-menu" role="button" onclick="">
+                  <span>Lihat Selengkapnya</span>
+                  <i class="fa fa-caret-right" style="font-size:18px; vertical-align: middle;"></i>
+                </button>
+              </div>
+            </div>
+          </li>
+          <li class="col-md-6">
+            <div class="row">
+              <div class="col-md-3 text-center">
+                <div class="icon"> <img src="assets/images/menu-icon/mobile/download.png" alt="" > </div>
+              </div>
+              <div class="col-md-9">
+                <h5 class="menu-icon-title">Download</h5>
+                <p class="sub-title">Halaman yang disediakan mendownload 
+                  materi publikasi.</p>
+                <button class="button-icon-menu" role="button" onclick="">
+                  <span>Lihat Selengkapnya</span>
+                  <i class="fa fa-caret-right" style="font-size:18px; vertical-align: middle;"></i>
+                </button>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="bg-panduan padding-bottom-100">
+        <div class="container text-center">
+          <img src="assets/images/panduan-spmb.png" alt="" class="img-panduan">
+          <button class="button-panduan" role="button" onclick="">
+            <span>PANDUAN SPMB</span>
+            <i class="fa fa-long-arrow-right" style="font-size:18px; vertical-align: middle;"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="bg-panduan-mobile padding-bottom-100">
+        <div class="container text-center">
+          <img src="assets/images/panduan-spmb-mobile.png" alt="" class="img-panduan-mobile">
+          <button class="button-panduan" role="button" onclick="">
+            <span>PANDUAN SPMB</span>
+            <i class="fa fa-long-arrow-right" style="font-size:18px; vertical-align: middle;"></i>
+          </button>
+        </div>
+      </div>
+      
+      <!-- Virtual Tour -->
+      <div class="virtual-tour">
+        <div class="container">
+          <li>
+            <div class="row">
+              <div class="col-md-6">
+                <h4>Virtual Tour</h4>
+                <p>Jelajahi salah satu universitas terkemuka di Indonesia, Universitas Sebelas Maret (UNS), dari rumah Anda sendiri! 
+                  Virtual tour kami memungkinkan Anda untuk mengeksplorasi  Universitas Sebelas Maret. Bergabunglah dengan kami dalam 
+                  perjalanan virtual ini dan lihat mengapa UNS adalah pilihan yang sempurna untuk pendidikan tinggi Anda! </p>
+              </div>
+              <div class="col-md-6"> <img src="assets/images/virtual-tour.png" alt=""> </div>
+            </div>
+          </li>
+        </div>
+      </div>
+      <!-- Virtual Tour Mobile -->
+      <div class="virtual-tour-mobile">
+        <div class="container">
+          <li>
+            <div class="row">
+              <div class="col-md-6"> <img src="assets/images/virtual-tour.png" alt=""> </div>
+              <div class="col-md-6">
+                <h4>Virtual Tour</h4>
+                <p>Jelajahi salah satu universitas terkemuka di Indonesia, Universitas Sebelas Maret (UNS), dari rumah Anda sendiri! 
+                  Virtual tour kami memungkinkan Anda untuk mengeksplorasi  Universitas Sebelas Maret. Bergabunglah dengan kami dalam 
+                  perjalanan virtual ini dan lihat mengapa UNS adalah pilihan yang sempurna untuk pendidikan tinggi Anda! </p>
+              </div>
+            </div>
+          </li>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tes Minat Bakat -->
+    <section class="minat-bakat padding-top-100">
+      <div class="container">
+        <li class="row">
+          <div class="col-md-6"> <img src="assets/images/minat-bakat.png" alt=""> </div>
+          <hr id="hr-mobile">
+          <div class="col-md-6" style="vertical-align: middle;">
+            <h4>Tes Minat Bakat</h4>
+            <p>Temukan Kemampuan Tersembunyi Kamu dan Jadilah Yang Terbaik dalam Bidang Pilihan Kamu!</p>
+            <button class="button-minat" role="button" onclick="">
+              <span>Tes Minat Bakat</span>
+              <i class="fa fa-long-arrow-right" style="font-size:20px; vertical-align: middle;"></i>
+            </button>
+          </div>
+        </li>
+      </div>
+      <hr>
+    </section>
+
+    <!-- Berita -->
+    <section class="berita padding-top-100 padding-bottom-100">
+      <div class="container"> 
+        
+        <!-- Tittle Berita -->
+        <div class="heading-block black-text text-center margin-bottom-30">
+          <h2>Berita & Pengumuman</h2>
+        </div>
+        <!-- Sub Tittle Berita -->
+        <div class="heading-block black-text text-center margin-bottom-50">
+          <span>Dapatkan Setiap Informasi Terbaru dari Kami</span>
+        </div>
+        
+        <!-- Menu Berita -->
+        <div class="container">
+          <div class="grid">
+            <article>
+              <img src="https://picsum.photos/600/400?image=1083" alt="Sample photo">
+              <div class="text">
+                <p>Pengumuman Hasil Seleksi
+                  Wawancara Program Magang
+                  UPT SPMB UNS Tahun 2023
+                </p>
+                <a href="#" class="btn btn-primary btn-block">
+                  <span>Selengkapnya</span>
+                  <i class="fa fa-long-arrow-right" style="font-size:20px; margin-left: 20px; vertical-align: middle;"></i>
+                </a>
+              </div>
+            </article>
+
+            <article>
+              <img src="https://picsum.photos/600/400?image=1063" alt="Sample photo">
+              <div class="text">
+                <p>Pengumuman Hasil Seleksi
+                  Wawancara Program Magang
+                  UPT SPMB UNS Tahun 2023
+                </p>
+                <a href="#" class="btn btn-primary btn-block">
+                  <span>Selengkapnya</span>
+                  <i class="fa fa-long-arrow-right" style="font-size:20px; margin-left: 20px; vertical-align: middle;"></i>
+                </a>
+              </div>
+            </article>
+
+            <article>
+              <img src="https://picsum.photos/600/400?image=1056" alt="Sample photo">
+              <div class="text">
+                <p>Pengumuman Hasil Seleksi
+                  Wawancara Program Magang
+                  UPT SPMB UNS Tahun 2023
+                </p>
+                <a href="#" class="btn btn-primary btn-block">
+                  <span>Selengkapnya</span>
+                  <i class="fa fa-long-arrow-right" style="font-size:20px; margin-left: 20px; vertical-align: middle;"></i>
+                </a>
+              </div>
+            </article>
+
+            <article>
+              <img src="https://picsum.photos/600/400?image=1050" alt="Sample photo">
+              <div class="text">
+                <p>Pengumuman Hasil Seleksi
+                  Wawancara Program Magang
+                  UPT SPMB UNS Tahun 2023
+                </p>
+                <a href="#" class="btn btn-primary btn-block">
+                  <span>Selengkapnya</span>
+                  <i class="fa fa-long-arrow-right" style="font-size:20px; margin-left: 20px; vertical-align: middle;"></i>
+                </a>
+              </div>
+            </article>
+
+            <article>
+              <img src="https://picsum.photos/600/400?image=1041" alt="Sample photo">
+              <div class="text">
+                <p>Pengumuman Hasil Seleksi
+                  Wawancara Program Magang
+                  UPT SPMB UNS Tahun 2023
+                </p>
+                <a href="#" class="btn btn-primary btn-block">
+                  <span>Selengkapnya</span>
+                  <i class="fa fa-long-arrow-right" style="font-size:20px; margin-left: 20px; vertical-align: middle;"></i>
+                </a>
+              </div>
+            </article>
+
+            <article>
+              <img src="https://picsum.photos/600/400?image=1015" alt="Sample photo">
+              <div class="text">
+                <p>Pengumuman Hasil Seleksi
+                  Wawancara Program Magang
+                  UPT SPMB UNS Tahun 2023
+                </p>
+                <a href="#" class="btn btn-primary btn-block">
+                  <span>Selengkapnya</span>
+                  <i class="fa fa-long-arrow-right" style="font-size:20px; margin-left: 20px; vertical-align: middle;"></i>
+                </a>
+              </div>
+            </article>
+          </div>
+          <!-- Button -->
+          <div class="btn-lain text-center">
+            <a href="#" class="btn btn-primary btn-block">
+              <span>Berita Lainnya</span>
+              <i class="fa fa-long-arrow-right" style="font-size:20px; margin-left: 20px; vertical-align: middle;"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- PERINGATAN -->
+    <section class="bg-peringatan text-center padding-top-50 padding-bottom-50">
+      <div class="container">
+        <h2 id="peringatan">Perhatian!!!</h2>
+        <div class="peringatan text-center margin-bottom-50">
+          <p class="text-white margin-bottom-20">UNS TIDAK BEKERJASAMA dengan Pihak Bimbingan Belajar/Bimbingan Tes atau Lembaga sejenis untuk mengadakan kegiatan Try-Out dan menjanjikan kemudahan/kelulusan untuk diterima di UNS.</p>
+          <p class="text-white margin-bottom-20">JANGAN PERCAYA pihak manapun yang menawarkan kelulusan dengan membayar sejumlah uang atau imbalan lainnya. UNS hanya menerima Mahasiswa Baru melalui jalur yang telah dipublikasikan melalui laman resmi https://spmb.uns.ac.id.</p>
+          <p class="text-white">UNS TIDAK BEKERJASAMA dengan Pihak Bimbingan Belajar/Bimbingan Tes atau Lembaga sejenis untuk mengadakan kegiatan Try-Out dan menjanjikan kemudahan/kelulusan untuk diterima di UNS.</p>
+        </div>
+      </div>
+      <img class="corner-left" src="assets/images/corner-left.png" alt=""/>
+      <img class="corner-right" src="assets/images/corner-right.png" alt=""/>
+    </section>
+  </div>
+  <!-- End Content --> 
+  
+  <!-- Footer -->
+  <footer>
+    
+    <!-- Footer Info -->
+    <div class="footer-info">
+      <div class="container">
+        <div class="row"> 
+          
+          <!-- About -->
+          <div class="col-md-5">
+            <h6>Kantor Sekretariat</h6>
+            <ul class="personal-info">
+              <li>Jl. Ir. Sutami No. 36 A Gedung SPMB Lt. 1 Kampus Kentingan Surakarta 57126.</li>
+              <li><i class="fa fa-phone"></i>Phone Direct (0271) 634880</li>
+              <li><i class="fa fa-paper-plane-o"></i>Fax. (0271) 634880</li>
+              <li><i class="fa fa-light fa-globe"></i>https://spmb.uns.ac.id</li>
+              <li><i class="fa fa-envelope"></i>spmb@unit.uns.ac.id</li>
+              <li><i class="fa fa-map-marker"></i>Lihat di Maps</li>
+            </ul>
+          </div>
+          
+          <!-- Service provided -->
+          <div class="col-md-7">
+            <h6>Link Fakultas</h6>
+            <ul class="links">
+              <li><a href="#.">Pendidikan Sejarah</a></li>
+              <li><a href="#.">Pendidikan Seni Rupa</a></li>
+              <li><a href="#.">Pendidikan Sosiologi Antropologi</a></li>
+              <li><a href="#.">Pendidikan Teknik Bangunan</a></li>
+              <li><a href="#.">Pendidikan Teknik Informatika & Komputer</a></li>
+              <li><a href="#.">Pendidikan Teknik Mesin</a></li>
+              <li><a href="#.">Penyuluhan dan Komunikasi Pertanian</a></li>
+              <li><a href="#.">Agribisnis</a></li>
+              <li><a href="#.">Agroteknologi</a></li>
+              <li><a href="#.">Akuntansi</a></li>
+              <li><a href="#.">Arsitektur</a></li>
+              <li><a href="#.">Bisnis Digital</a></li>
+              <li><a href="#.">Desain Interior</a></li>
+              <li><a href="#.">Desain Komunikasi Visual</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Rights -->
+    <div class="rights">
+      <div class="container">
+        <p>Copyright © <script>document.write(new Date().getFullYear())</script> Universitas Sebelas Maret. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+</div>
+<!-- End Page Wrapper --> 
+
+<!-- JavaScripts --> 
+<script src="assets/js/vendors/jquery/jquery.min.js"></script> 
+<script src="assets/js/vendors/wow.min.js"></script> 
+<script src="assets/js/vendors/bootstrap.min.js"></script> 
+<script src="assets/js/vendors/own-menu.js"></script> 
+<script src="assets/js/vendors/flexslider/jquery.flexslider-min.js"></script> 
+<script src="assets/js/vendors/jquery.countTo.js"></script> 
+<script src="assets/js/vendors/jquery.isotope.min.js"></script> 
+<script src="assets/js/vendors/jquery.bxslider.min.js"></script> 
+<script src="assets/js/vendors/owl.carousel.min.js"></script> 
+<script src="assets/js/vendors/jquery.sticky.js"></script>
+<script src="assets/js/main.js"></script> 
+<script src="assets/js/custom.js"></script> 
+
+<!-- SLIDER REVOLUTION 4.x SCRIPTS  --> 
+<script type="text/javascript" src="assets/rs-plugin/js/jquery.themepunch.tools.min.js"></script> 
+<script type="text/javascript" src="assets/rs-plugin/js/jquery.themepunch.revolution.min.js"></script> 
+</body>
 </html>

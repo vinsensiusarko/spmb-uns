@@ -1,5 +1,6 @@
 {
   "hosting": {
+    "site": "spmb-uns-solo",
     "public": "public",
     "ignore": [
       "firebase.json",
