@@ -476,6 +476,38 @@ header .ownmenu ul.dropdown li:hover > a{
   .wrapper .carousel {
     grid-auto-columns: calc((100% / 2) - 9px);
   }
+  .carousel .card h2 {
+    color: #fff;
+    display:inline-block;
+    font-weight: bold;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: center;
+  }
+  .carousel .card span {
+    color: #fff;
+    font-size: 500;
+    text-align: center;
+    margin-left: 20px;
+    margin-right: 20px;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+  }
 }
 
 @media screen and (max-width: 768px) {
