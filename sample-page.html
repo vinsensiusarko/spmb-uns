@@ -221,9 +221,203 @@
         <div class="section section-basic">
           <div class="container">
             <div class="row">
-              <div class="col-md-4">
-                <!-- Isi Konten -->
-                <div class="container" style="height: 500px;"></div>
+              <div class="col-md-12" style="margin-bottom: 20px;">
+                <ul class="nav nav-pills" role="tablist" style="margin-top: 20px; margin-bottom: 20px;">
+                  <li class="nav-item active">
+                    <a href="#buttons" class="nav-link" role="tab" data-toggle="tab">Buttons</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#cards" class="nav-link" role="tab" data-toggle="tab">Cards</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#collapse" class="nav-link" role="tab" data-toggle="tab">Collapse</a>
+                  </li>
+                </ul>
+                <div class="tab-content">
+                  <div role="tabpanel" id="buttons" class="tab-pane fade active in">
+                      <h1>Buttons</h1>
+                      <p>Use Bootstrap’s custom button styles for actions in forms, dialogs, and more with support for multiple sizes, states, and more.</p>
+                      <h2>Examples</h2>
+                      <p>Bootstrap includes several predefined button styles, each serving its own semantic purpose, with a few extras thrown in for more control.</p>
+                      <div style="margin-bottom: 10px;">
+                        <button type="button" class="btn btn-primary" style="margin: 5px;">Primary</button>
+                        <button type="button" class="btn btn-secondary" style="margin: 5px;">Secondary</button>
+                        <button type="button" class="btn btn-success" style="margin: 5px;">Success</button>
+                        <button type="button" class="btn btn-danger" style="margin: 5px;">Danger</button>
+                        <button type="button" class="btn btn-warning" style="margin: 5px;">Warning</button>
+                        <button type="button" class="btn btn-info" style="margin: 5px;">Info</button>
+                        <button type="button" class="btn btn-light" style="margin: 5px;">Light</button>
+                        <button type="button" class="btn btn-dark" style="margin: 5px;">Dark</button>
+                        <button type="button" class="btn btn-link" style="margin: 5px;">Link</button>
+                      </div>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">"button"</span> <span class="na">class</span><span class="o">=</span><span class="s">"btn btn-primary"</span><span class="p">&gt;</span>Primary<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">"button"</span> <span class="na">class</span><span class="o">=</span><span class="s">"btn btn-secondary"</span><span class="p">&gt;</span>Secondary<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">"button"</span> <span class="na">class</span><span class="o">=</span><span class="s">"btn btn-success"</span><span class="p">&gt;</span>Success<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">"button"</span> <span class="na">class</span><span class="o">=</span><span class="s">"btn btn-danger"</span><span class="p">&gt;</span>Danger<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">"button"</span> <span class="na">class</span><span class="o">=</span><span class="s">"btn btn-warning"</span><span class="p">&gt;</span>Warning<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">"button"</span> <span class="na">class</span><span class="o">=</span><span class="s">"btn btn-info"</span><span class="p">&gt;</span>Info<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">"button"</span> <span class="na">class</span><span class="o">=</span><span class="s">"btn btn-light"</span><span class="p">&gt;</span>Light<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">"button"</span> <span class="na">class</span><span class="o">=</span><span class="s">"btn btn-dark"</span><span class="p">&gt;</span>Dark<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">"button"</span> <span class="na">class</span><span class="o">=</span><span class="s">"btn btn-link"</span><span class="p">&gt;</span>Link<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span></span></span></code></pre></div>
+                  </div>
+                  <div role="tabpanel" id="cards" class="tab-pane fade">
+                    <h1>Cards</h1>
+                    <p>Bootstrap’s cards provide a flexible and extensible content container with multiple variants and options.</p>
+                    <h2>About</h2>
+                    <p>A card is a flexible and extensible content container. It includes options for headers and footers, a wide variety of content, contextual background colors, and powerful display options. If you’re familiar with Bootstrap 3, cards replace our old panels, wells, and thumbnails. Similar functionality to those components is available as modifier classes for cards.</p>
+                    <h2>Example</h2>
+                    <p>Cards are built with as little markup and styles as possible, but still manage to deliver a ton of control and customization. Built with flexbox, they offer easy alignment and mix well with other Bootstrap components. They have no <code>margin</code> by default, so use spacing utilities as needed.</p>
+                    <p>Below is an example of a basic card with mixed content and a fixed width. Cards have no fixed width to start, so they’ll naturally fill the full width of its parent element. This is easily customized with our various sizing options.</p>
+                    <div class="card" style="width: 300px;">
+                      <div style="width: 300px; height: 300px; background-color: grey;"></div>
+                      <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                      </div>
+                    </div>
+  <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"card"</span> <span class="na">style</span><span class="o">=</span><span class="s">"width: 18rem;"</span><span class="p">&gt;</span>
+  </span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">"..."</span> <span class="na">class</span><span class="o">=</span><span class="s">"card-img-top"</span> <span class="na">alt</span><span class="o">=</span><span class="s">"..."</span><span class="p">&gt;</span>
+  </span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"card-body"</span><span class="p">&gt;</span>
+  </span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">h5</span> <span class="na">class</span><span class="o">=</span><span class="s">"card-title"</span><span class="p">&gt;</span>Card title<span class="p">&lt;/</span><span class="nt">h5</span><span class="p">&gt;</span>
+  </span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">"card-text"</span><span class="p">&gt;</span>Some quick example text to build on the card title and make up the bulk of the card's content.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+  </span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">"#"</span> <span class="na">class</span><span class="o">=</span><span class="s">"btn btn-primary"</span><span class="p">&gt;</span>Go somewhere<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+  </span></span><span class="line"><span class="cl">  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  </span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span></span></span></code></pre></div>
+                  </div>
+                  <div role="tabpanel" id="collapse" class="tab-pane fade">
+                    <h1>Collapse</h1>
+                    <p>Toggle the visibility of content across your project with a few classes and our JavaScript plugins.</p>
+                    <h2>How it works</h2>
+                    <p>Generally, we recommend using a button with the <code>data-target</code> attribute. While not recommended from a semantic point of view, you can also use a link with the <code>href</code> attribute (and a <code>role="button"</code>). In both cases, the <code>data-toggle="collapse"</code> is required.</p>
+                    <h2>Example</h2>
+                    <p>Click the buttons below to show and hide another element via class changes:</p>
+                    <ul>
+                      <li style="font-weight: normal;"><code>.collapse</code> hides content</li>
+                      <li style="font-weight: normal;"><code>.collapsing</code> is applied during transitions</li>
+                      <li style="font-weight: normal;"><code>.collapse.in</code> shows content</li>
+                    </ul>
+                    <p>Generally, we recommend using a button with the <code>data-target</code> attribute. While not recommended from a semantic point of view, you can also use a link with the <code>href</code> attribute (and a <code>role="button"</code>). In both cases, the <code>data-toggle="collapse"</code> is required.</p>
+                    <p>
+                      <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                        Link with href
+                      </a>
+                      <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                        Button with data-target
+                      </button>
+                    </p>
+                    <div class="collapse" id="collapseExample">
+                      <div class="card card-body">
+                        Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                      </div>
+                    </div>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">a</span> <span class="na">class</span><span class="o">=</span><span class="s">"btn btn-primary"</span> <span class="na">data-toggle</span><span class="o">=</span><span class="s">"collapse"</span> <span class="na">href</span><span class="o">=</span><span class="s">"#collapseExample"</span> <span class="na">role</span><span class="o">=</span><span class="s">"button"</span> <span class="na">aria-expanded</span><span class="o">=</span><span class="s">"false"</span> <span class="na">aria-controls</span><span class="o">=</span><span class="s">"collapseExample"</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    Link with href
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">button</span> <span class="na">class</span><span class="o">=</span><span class="s">"btn btn-primary"</span> <span class="na">type</span><span class="o">=</span><span class="s">"button"</span> <span class="na">data-toggle</span><span class="o">=</span><span class="s">"collapse"</span> <span class="na">data-target</span><span class="o">=</span><span class="s">"#collapseExample"</span> <span class="na">aria-expanded</span><span class="o">=</span><span class="s">"false"</span> <span class="na">aria-controls</span><span class="o">=</span><span class="s">"collapseExample"</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    Button with data-target
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"collapse"</span> <span class="na">id</span><span class="o">=</span><span class="s">"collapseExample"</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"card card-body"</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span></span></span></code></pre></div>
+                    <h2>Accordion example</h2>
+                    <p>Using the card component, you can extend the default collapse behavior to create an accordion. To properly achieve the accordion style, be sure to use <code>.accordion</code> as a wrapper.</p>
+                    <div class="accordion" id="accordionExample">
+                      <div class="card">
+                        <div class="card-header" id="headingOne">
+                          <h2 class="mb-0">
+                            <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                              Collapsible Group Item #1
+                            </button>
+                          </h2>
+                        </div>
+                    
+                        <div id="collapseOne" class="collapse in" aria-labelledby="headingOne" data-parent="#accordionExample">
+                          <div class="card-body">
+                            Some placeholder content for the first accordion panel. This panel is shown by default, thanks to the <code>.in</code> class.
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <div class="card-header" id="headingTwo">
+                          <h2 class="mb-0">
+                            <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                              Collapsible Group Item #2
+                            </button>
+                          </h2>
+                        </div>
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                          <div class="card-body">
+                            Some placeholder content for the second accordion panel. This panel is hidden by default.
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <div class="card-header" id="headingThree">
+                          <h2 class="mb-0">
+                            <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                              Collapsible Group Item #3
+                            </button>
+                          </h2>
+                        </div>
+                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                          <div class="card-body">
+                            And lastly, the placeholder content for the third and final accordion panel. This panel is hidden by default.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"accordion"</span> <span class="na">id</span><span class="o">=</span><span class="s">"accordionExample"</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"card"</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"card-header"</span> <span class="na">id</span><span class="o">=</span><span class="s">"headingOne"</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">      <span class="p">&lt;</span><span class="nt">h2</span> <span class="na">class</span><span class="o">=</span><span class="s">"mb-0"</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">button</span> <span class="na">class</span><span class="o">=</span><span class="s">"btn btn-link btn-block text-left"</span> <span class="na">type</span><span class="o">=</span><span class="s">"button"</span> <span class="na">data-toggle</span><span class="o">=</span><span class="s">"collapse"</span> <span class="na">data-target</span><span class="o">=</span><span class="s">"#collapseOne"</span> <span class="na">aria-expanded</span><span class="o">=</span><span class="s">"true"</span> <span class="na">aria-controls</span><span class="o">=</span><span class="s">"collapseOne"</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">          Collapsible Group Item #1
+</span></span><span class="line"><span class="cl">        <span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">      <span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">"collapseOne"</span> <span class="na">class</span><span class="o">=</span><span class="s">"collapse in"</span> <span class="na">aria-labelledby</span><span class="o">=</span><span class="s">"headingOne"</span> <span class="na">data-parent</span><span class="o">=</span><span class="s">"#accordionExample"</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">      <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"card-body"</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">        Some placeholder content for the first accordion panel. This panel is shown by default, thanks to the <span class="p">&lt;</span><span class="nt">code</span><span class="p">&gt;</span>.show<span class="p">&lt;/</span><span class="nt">code</span><span class="p">&gt;</span> class.
+</span></span><span class="line"><span class="cl">      <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"card"</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"card-header"</span> <span class="na">id</span><span class="o">=</span><span class="s">"headingTwo"</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">      <span class="p">&lt;</span><span class="nt">h2</span> <span class="na">class</span><span class="o">=</span><span class="s">"mb-0"</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">button</span> <span class="na">class</span><span class="o">=</span><span class="s">"btn btn-link btn-block text-left collapsed"</span> <span class="na">type</span><span class="o">=</span><span class="s">"button"</span> <span class="na">data-toggle</span><span class="o">=</span><span class="s">"collapse"</span> <span class="na">data-target</span><span class="o">=</span><span class="s">"#collapseTwo"</span> <span class="na">aria-expanded</span><span class="o">=</span><span class="s">"false"</span> <span class="na">aria-controls</span><span class="o">=</span><span class="s">"collapseTwo"</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">          Collapsible Group Item #2
+</span></span><span class="line"><span class="cl">        <span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">      <span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">"collapseTwo"</span> <span class="na">class</span><span class="o">=</span><span class="s">"collapse"</span> <span class="na">aria-labelledby</span><span class="o">=</span><span class="s">"headingTwo"</span> <span class="na">data-parent</span><span class="o">=</span><span class="s">"#accordionExample"</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">      <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"card-body"</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">        Some placeholder content for the second accordion panel. This panel is hidden by default.
+</span></span><span class="line"><span class="cl">      <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"card"</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"card-header"</span> <span class="na">id</span><span class="o">=</span><span class="s">"headingThree"</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">      <span class="p">&lt;</span><span class="nt">h2</span> <span class="na">class</span><span class="o">=</span><span class="s">"mb-0"</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">button</span> <span class="na">class</span><span class="o">=</span><span class="s">"btn btn-link btn-block text-left collapsed"</span> <span class="na">type</span><span class="o">=</span><span class="s">"button"</span> <span class="na">data-toggle</span><span class="o">=</span><span class="s">"collapse"</span> <span class="na">data-target</span><span class="o">=</span><span class="s">"#collapseThree"</span> <span class="na">aria-expanded</span><span class="o">=</span><span class="s">"false"</span> <span class="na">aria-controls</span><span class="o">=</span><span class="s">"collapseThree"</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">          Collapsible Group Item #3
+</span></span><span class="line"><span class="cl">        <span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">      <span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">"collapseThree"</span> <span class="na">class</span><span class="o">=</span><span class="s">"collapse"</span> <span class="na">aria-labelledby</span><span class="o">=</span><span class="s">"headingThree"</span> <span class="na">data-parent</span><span class="o">=</span><span class="s">"#accordionExample"</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">      <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"card-body"</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">        And lastly, the placeholder content for the third and final accordion panel. This panel is hidden by default.
+</span></span><span class="line"><span class="cl">      <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span></span></span></code></pre></div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
