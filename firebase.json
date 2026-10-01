@@ -2,6 +2,7 @@
   "hosting": {
     "site": "spmb-uns-solo",
     "public": "public",
+    "cleanUrls": true,
     "ignore": [
       "firebase.json",
       "**/.*",
